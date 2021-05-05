@@ -17,6 +17,7 @@ public class ContinousMovement : MonoBehaviour
 
     public float additionHeight = 0.2f;
 
+
     void Start()
     {
         character = GetComponent<CharacterController>();
