@@ -13,7 +13,6 @@ public class Collectables : MonoBehaviour
         Destroy(part, 0.5f);
         
         this.gameObject.SetActive(false);
-
     }
    
 

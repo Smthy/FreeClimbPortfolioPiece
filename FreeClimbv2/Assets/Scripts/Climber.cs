@@ -7,8 +7,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Climber : MonoBehaviour
 {
     private CharacterController character;
-    public static XRController climbingHands;
+    public static XRController climbingHand;
     private ContinousMovement continousMovement;
+    
 
     private void Start()
     {
@@ -19,7 +20,7 @@ public class Climber : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(climbingHands)
+        if(climbingHand)
         {
             continousMovement.enabled = false;
             Climb();
@@ -33,7 +34,7 @@ public class Climber : MonoBehaviour
 
     void Climb()
     {
-        InputDevices.GetDeviceAtXRNode(climbingHands.controllerNode).TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 velocity);
+        InputDevices.GetDeviceAtXRNode(climbingHand.controllerNode).TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 velocity);
 
         character.Move(transform.rotation * -velocity * Time.fixedDeltaTime);
         

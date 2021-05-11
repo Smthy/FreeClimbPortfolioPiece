@@ -14,11 +14,10 @@ public class Hands : MonoBehaviour
 
     public GameObject handPrefab;
     private GameObject spawnedHandModel;
-
-
     private GameObject spawned;
-
     private Animator handAnimator;
+
+    public CheckPoint checkpoint;
     void Start()
     {
         Try();
@@ -52,29 +51,14 @@ public class Hands : MonoBehaviour
             handAnimator = spawnedHandModel.GetComponent<Animator>();
         }
     }
-
+    /*
     void UpdateAnimator()
     {
-        if(targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
-        {
-            handAnimator.SetFloat("Trigger", triggerValue);
-        }
-        else
-        {
-            handAnimator.SetFloat("Trigger", 0);
-        }
-
-        if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
-        {
-            handAnimator.SetFloat("Grip", gripValue);
-        }
-        else
-        {
-            handAnimator.SetFloat("Grip", 0);
-        }
+        
     }
+    */
 
-    void Update()
+    void FixedUpdate()
     {
         if (!targetDevice.isValid)
         {
@@ -90,9 +74,41 @@ public class Hands : MonoBehaviour
             else
             {
                 spawned.SetActive(false);
-                spawnedHandModel.SetActive(true);
-                UpdateAnimator();
+                spawnedHandModel.SetActive(true);                
+                //UpdateAnimator();
+                GameInputs();
             }
-        }        
+        }
     }
+
+    void GameInputs()
+    {
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
+        {
+            handAnimator.SetFloat("Trigger", triggerValue);
+
+        }
+        else
+        {
+            handAnimator.SetFloat("Trigger", 0);
+        }
+
+        if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
+        {
+            handAnimator.SetFloat("Grip", gripValue);
+        }
+        else
+        {
+            handAnimator.SetFloat("Grip", 0);
+        }
+
+        if (targetDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out bool secondary))
+        {           
+            if(secondary)
+            {
+                Debug.Log("B Pressed: " + secondary + "\n");
+                
+            }            
+        }
+    }  
 }
