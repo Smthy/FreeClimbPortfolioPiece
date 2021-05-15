@@ -18,8 +18,11 @@ public class Hands : MonoBehaviour
     private Animator handAnimator;
 
     public CheckPoint checkpoint;
+
+    public GameObject checkPointObject;
     void Start()
     {
+        checkPointObject.SetActive(false);
         Try();
     }
 
@@ -107,8 +110,12 @@ public class Hands : MonoBehaviour
             if(secondary)
             {
                 Debug.Log("B Pressed: " + secondary + "\n");
-                
-            }            
+                checkPointObject.SetActive(true);                
+            }
+            if (!secondary)
+            {
+                checkPointObject.SetActive(false);
+            }
         }
     }  
 }

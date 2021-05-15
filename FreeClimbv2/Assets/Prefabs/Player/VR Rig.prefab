@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 181247756}
   - component: {fileID: 181247755}
   - component: {fileID: 181247754}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkpoint 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6936513492855368089}
         m_TargetAssemblyTypeName: CheckPointTeleport, Assembly-CSharp
-        m_MethodName: button2
+        m_MethodName: Button2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -585,7 +585,8 @@ GameObject:
   - component: {fileID: 408587227}
   - component: {fileID: 408587226}
   - component: {fileID: 6936513492855368089}
-  m_Layer: 0
+  - component: {fileID: 1899629825047861682}
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,6 +694,26 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  currentTransform: {fileID: 0}
+  character: {fileID: 1334830442}
+--- !u!114 &1899629825047861682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408587224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 2147483647
 --- !u!1 &506551051
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,7 +725,7 @@ GameObject:
   - component: {fileID: 506551052}
   - component: {fileID: 506551054}
   - component: {fileID: 506551053}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,7 +804,7 @@ GameObject:
   - component: {fileID: 571989830}
   - component: {fileID: 571989832}
   - component: {fileID: 571989831}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +884,7 @@ GameObject:
   - component: {fileID: 755754154}
   - component: {fileID: 755754153}
   - component: {fileID: 755754152}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkpoint 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,7 +994,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6936513492855368089}
         m_TargetAssemblyTypeName: CheckPointTeleport, Assembly-CSharp
-        m_MethodName: button1
+        m_MethodName: Button1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -995,7 +1016,7 @@ GameObject:
   - component: {fileID: 1003051526}
   - component: {fileID: 1003051525}
   - component: {fileID: 1003051524}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkpoint 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,7 +1126,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6936513492855368089}
         m_TargetAssemblyTypeName: CheckPointTeleport, Assembly-CSharp
-        m_MethodName: button3
+        m_MethodName: Button3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1126,7 +1147,7 @@ GameObject:
   - component: {fileID: 1283267082}
   - component: {fileID: 1283267084}
   - component: {fileID: 1283267083}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,7 +1226,7 @@ GameObject:
   - component: {fileID: 1356304089}
   - component: {fileID: 1356304091}
   - component: {fileID: 1356304090}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1285,7 +1306,7 @@ GameObject:
   - component: {fileID: 1446150777}
   - component: {fileID: 1446150776}
   - component: {fileID: 1446150775}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkpoint 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1395,7 +1416,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6936513492855368089}
         m_TargetAssemblyTypeName: CheckPointTeleport, Assembly-CSharp
-        m_MethodName: button4
+        m_MethodName: Button4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1756,7 +1777,7 @@ GameObject:
   - component: {fileID: 2060413502}
   - component: {fileID: 2060413501}
   - component: {fileID: 6936513492855368091}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: CheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1771,8 +1792,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060413499}
   m_LocalRotation: {x: 0.057788678, y: -0.002170533, z: -0.108044535, w: 0.99246275}
-  m_LocalPosition: {x: -0.049575806, y: 0.013931949, z: -0.36779496}
-  m_LocalScale: {x: 0.02, y: 0.05, z: 0.5}
+  m_LocalPosition: {x: -0.0424, y: 0.0409, z: -0.2187}
+  m_LocalScale: {x: 0.02, y: 0.05, z: 0.30625}
   m_Children:
   - {fileID: 408587225}
   m_Father: {fileID: 5695793603287348630}
@@ -1805,7 +1826,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 45163b81b3fdd31499b7b9e35103cda1, type: 2}
+  - {fileID: 2100000, guid: 66bf6014af3e5af43bf39d112215a591, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1858,6 +1879,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  currentTransform: {fileID: 0}
+  character: {fileID: 0}
 --- !u!1 &18967071171517719
 GameObject:
   m_ObjectHideFlags: 0

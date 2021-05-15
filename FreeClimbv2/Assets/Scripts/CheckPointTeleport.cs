@@ -6,35 +6,51 @@ public class CheckPointTeleport : MonoBehaviour
 {
     public GameObject player;
     public Transform[] tranforms;
-    private Transform currentTransform;
+    public Transform currentTransform;
+
+    public CharacterController character;
 
     private void Start()
-    {
-        currentTransform.transform.position = player.transform.position;
+    {        
+        if (player == null)
+            player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    public void button1()
+    public void Button1()
     {
-        tranforms[0] = currentTransform;
-
+        character.enabled = false;
+        
+        currentTransform = tranforms[0];        
         player.transform.position = currentTransform.transform.position;
+        
+        character.enabled = true;
+
     }
-    public void button2()
+    public void Button2()
     {
-        tranforms[1] = currentTransform;
+        character.enabled = false;
 
+        currentTransform = tranforms[1];
         player.transform.position = currentTransform.transform.position;
+
+        character.enabled = true;
     }
-    public void button3()
+    public void Button3()
     {
-        tranforms[3] = currentTransform;
+        character.enabled = false;
 
+        currentTransform = tranforms[2];
         player.transform.position = currentTransform.transform.position;
+
+        character.enabled = true;
     }
-    public void button4()
+    public void Button4()
     {
-        tranforms[4] = currentTransform;
+        character.enabled = false;
 
+        currentTransform = tranforms[3];
         player.transform.position = currentTransform.transform.position;
+
+        character.enabled = true;
     }
 }
