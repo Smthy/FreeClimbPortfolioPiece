@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4174964557793445561}
   - component: {fileID: 4174964557793445560}
   - component: {fileID: 4174964557793445559}
+  - component: {fileID: 5909088762210826314}
   m_Layer: 0
   m_Name: End Portal
   m_TagString: Untagged
@@ -92,7 +93,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4174964557793445558}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4877,3 +4878,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &5909088762210826314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4174964557793445558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3b468e38f78224e8c3b12243c57dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
