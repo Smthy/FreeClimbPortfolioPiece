@@ -744,7 +744,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentTransform: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 4041698022859598217}
+  whoosh: {fileID: 0}
 --- !u!1 &4041698023483142689
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,6 +948,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentTransform: {fileID: 0}
   character: {fileID: 4041698022859598217}
+  whoosh: {fileID: 0}
 --- !u!114 &2470833192409044305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,7 +966,7 @@ MonoBehaviour:
   m_CheckFor3DOcclusion: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 0
 --- !u!1 &4041698023637473256
 GameObject:
   m_ObjectHideFlags: 0

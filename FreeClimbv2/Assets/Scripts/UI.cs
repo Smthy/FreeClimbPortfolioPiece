@@ -8,17 +8,17 @@ public class UI : MonoBehaviour
 {
     public void Level1()
     {
-        SceneManager.LoadScene("Main Game");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void Level2()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("RealWorld");
     }
 
     public void SpeedRun()
     {
-        SceneManager.LoadScene("Level 2");
+        SceneManager.LoadScene("SpeedRun");
     }
     public void Quit()
     {

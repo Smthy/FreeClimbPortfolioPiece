@@ -6,6 +6,7 @@ public class Level1Crashmat : MonoBehaviour
 {
     public GameObject player;
     public Transform teleportZone;
+    public AudioSource whoosh;
 
     public CharacterController character;
 
@@ -16,8 +17,10 @@ public class Level1Crashmat : MonoBehaviour
             character.enabled = false;
 
             player.transform.position = teleportZone.transform.position;
+            whoosh.Play();
 
             character.enabled = true;
+            whoosh.Stop();
         }
     }
 }

@@ -696,6 +696,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentTransform: {fileID: 0}
   character: {fileID: 1334830442}
+  whoosh: {fileID: 0}
 --- !u!114 &1899629825047861682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,6 +1882,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentTransform: {fileID: 0}
   character: {fileID: 0}
+  whoosh: {fileID: 0}
 --- !u!1 &18967071171517719
 GameObject:
   m_ObjectHideFlags: 0

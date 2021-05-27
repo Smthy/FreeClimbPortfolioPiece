@@ -7,7 +7,6 @@ public class PlayerTeleport : MonoBehaviour
     public GameObject player;
     public Transform[] teleportLocation;
     private Transform currentTeleport;
-    private int index = 0;
 
    void Start()
    {
@@ -17,14 +16,20 @@ public class PlayerTeleport : MonoBehaviour
 
    }
 
-    public void Teleport()
+    public void Teleport1()
     {
-        currentTeleport = teleportLocation[index];
+        currentTeleport = teleportLocation[0];
 
         Debug.Log("Final End Grabbed");
         player.transform.position = currentTeleport.transform.position;
+    }
 
-        index ++;
+    public void Teleport2()
+    {
+        currentTeleport = teleportLocation[1];
+
+        Debug.Log("Final End Grabbed");
+        player.transform.position = currentTeleport.transform.position;
     }
 
 }

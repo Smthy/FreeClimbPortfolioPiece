@@ -10,6 +10,8 @@ public class CheckPointTeleport : MonoBehaviour
 
     public CharacterController character;
 
+    public AudioSource whoosh;
+
     private void Start()
     {        
         if (player == null)
@@ -22,7 +24,8 @@ public class CheckPointTeleport : MonoBehaviour
         
         currentTransform = tranforms[0];        
         player.transform.position = currentTransform.transform.position;
-        
+        whoosh.Play();
+
         character.enabled = true;
 
     }
@@ -32,6 +35,7 @@ public class CheckPointTeleport : MonoBehaviour
 
         currentTransform = tranforms[1];
         player.transform.position = currentTransform.transform.position;
+        whoosh.Play();
 
         character.enabled = true;
     }
@@ -41,6 +45,7 @@ public class CheckPointTeleport : MonoBehaviour
 
         currentTransform = tranforms[2];
         player.transform.position = currentTransform.transform.position;
+        whoosh.Play();
 
         character.enabled = true;
     }
@@ -50,6 +55,7 @@ public class CheckPointTeleport : MonoBehaviour
 
         currentTransform = tranforms[3];
         player.transform.position = currentTransform.transform.position;
+        whoosh.Play();
 
         character.enabled = true;
     }
